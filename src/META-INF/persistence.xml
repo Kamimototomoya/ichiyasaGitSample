@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+	<persistence-unit name="FlowerMC" transaction-type="RESOURCE_LOCAL">
+		<properties>
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+			<property name="javax.persistence.jdbc.user" value="beeef9d29206b1"/>
+			<property name="javax.persistence.jdbc.url" value="mysql://us-cdbr-east-05.cleardb.net/heroku_a8a464ed316f369?reconnect=true"/>
+			<property name="javax.persistence.jdbc.password" value="caebb262"/>
+		</properties>
+	</persistence-unit>
+</persistence>

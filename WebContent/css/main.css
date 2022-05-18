@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+/*メインメニュー画面の設定ここから*/
+
+body{ /*背景画像設定*/
+	background-image: url(https://c.tenor.com/VQ8qpJoLc18AAAAd/japan-cherry-blossom.gif); 
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size:auto 100%;
+}
+
+.menu {
+/*     max-width: 1800px; */
+    width:100% /*ここ変えた*/
+}
+
+.menu a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+/*     color: #000000; */
+}
+
+
+
+
+label {
+    display: block;
+    margin: 0 25% 4px 25%;
+    padding : 15px;
+    line-height: 1;
+    color :#ffffff; /*メニューバーの文字色*/
+    background : #1c4e80; /*全社員共通メニューバーの背景色*/
+    cursor :pointer;
+    
+}
+
+
+
+input {
+    display: none;
+}
+
+.menu ul {
+/*     margin: 0; */
+margin: 0 25% 4px 25%;
+    padding: 0;
+    list-style: none;
+}
+
+.menu li {
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    background-color:rgba(253,245,230,0.7); /*開いたリストの背景色*/
+}
+
+#menu_bar01:checked ~ #links01 li,
+#menu_bar02:checked ~ #links02 li,
+#menu_bar03:checked ~ #links03 li{
+    height: 54px;
+    opacity: 1;
+}
+
+#administrator_menu{
+	background : #11244d; /*管理者用メニューバーの背景色*/
+}
+
+#main_hr{
+  height: 25px;
+  background-color: #11244d;
+  border: none;
+  width: 50%;
+  background-image: none;
+}

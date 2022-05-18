@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+/*テーブル個別のサイズ設定*/
+#plan_check_table {
+	width: 800px;
+	min-width:800px;
+}
+
+/*テーブル個別の列幅設定*/
+#plan_check_table tr td:nth-child(1) {
+	width: 20%;
+}
+#plan_check_table tr td:nth-child(2) {
+	width: 8%;
+}
+#plan_check_table tr td:nth-child(3) {
+	width: 52%;
+}
+#plan_check_table tr td:nth-child(4) {
+	width: 20%;
+}

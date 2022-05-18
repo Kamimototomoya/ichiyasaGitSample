@@ -1,0 +1,224 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css?family=Sawarabi+Mincho');
+
+.Header {
+position: fixed; /* ヘッダーを固定する */
+top: 0; /* 上部から配置の基準位置を決める */
+left: 0; /* 左から配置の基準位置を決める */
+width: 100%; /* ヘッダーの横幅を指定する */
+height: 40px; /* ヘッダーの高さを指定する */
+padding-top: 10px; /* ヘッダー内側の余白を指定する(上下左右) */
+/* padding-right:100px; */
+background-color: #4d001a; /* ヘッダーの背景色を指定する */
+color: #ffffff; /*ヘッダーのフォントの色を指定する
+/* vertical-align: middle; */
+text-align:right; /*テキストを右寄せにする*/
+margin-right : 10px;
+}
+
+/*元々のヘッダー設定*/
+h1 {
+	font-size: 50px;
+	font-weight:bold;
+	text-shadow: 1px 2px 10px #ffffff; 
+}
+
+/*リンクの文字色*/
+a:link, a:visited, a:active {
+  color: #11244d;
+}
+
+/*ログアウトリンク*/
+a.logout{
+	color: #c0c0c0;
+}
+a.logout:hover{
+	color: #ffffff;
+}
+
+/*リンクのマウスオン時の文字色*/
+a:hover{
+	color:#0094ff;
+}
+
+body {
+	margin-top: 100px; /*上部に余白を空ける*/
+	margin-bottom: 100px; /*下部に余白を空ける*/
+	text-align: center;
+	font-family: 'Sawarabi Mincho', sans-serif;
+	color:#11244d; /*基本の文字色*/
+	font-size: 20px;
+	background-color:#fdf5e6;
+}
+
+footer {
+	bottom: 0; /* 下部から配置の基準位置を決める */
+	left: 0; /* 左から配置の基準位置を決める */
+	width: 100%;
+	height: 30px;
+	background-color: #4d001a;
+
+	color:#ffffff;
+	text-align: center;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	position: fixed;
+}
+
+/*入力欄の上にカーソルが乗った時*/
+.TextBox:hover {
+	border: 1px solid #0094ff;
+	background-color: #cbe9ff;
+}
+
+/*入力欄等の位置調整。後でなおす*/
+.a {
+	text-align: center;
+	margin-right: 71px;
+}
+
+.b {
+	text-align: center;
+	margin-right: 90px;
+}
+
+.c {
+	text-align: center;
+	margin-left: 45px;
+}
+
+.d {
+	text-align: center;
+	margin-left: 45px;
+}
+
+.e {
+	text-align: center;
+	margin-left: 45px;
+}
+
+/*ボタンの装飾*/
+.decorated-btn {
+	background-color: #e6b8d4;
+	font-size: 14px;
+	border-radius: 5px;
+	border-bottom: solid 3px #4d3644;
+	box-shadow: 3px 3px 3px gray;
+	transition: 0.3s;
+}
+
+/*クリックしたときのボタンのへこみ具合*/
+.click-down:active {
+	transform: translateY(2px);
+	border-bottom: none;
+}
+
+/*ボタンの上にカーソルが乗った時*/
+.decorated-btn:hover {
+	background-color: #ffb6c1;
+}
+
+/*囲み枠*/
+fieldset {
+	width: 500px;
+	margin: auto; /*中央寄せ*/
+	border-radius: 5px; /* for Chrome */
+	border: 1px solid #11244d;
+	background:#ffffff;
+}
+
+/*全テーブル共通のデザイン*/
+table {
+	border-collapse: separate;
+	border-spacing: 20;
+	margin: auto; /*中央寄せ*/
+	background-color:#ffffff;
+}
+
+table th:first-child {
+	border-radius: 0px 0 0 0;
+}
+
+table th:last-child {
+	border-radius: 0 0px 0 0;
+	border-right: 0px solid #e6ec86;
+}
+
+table th {
+	text-align: center;
+	color: #ffffff;
+	background: linear-gradient(#1c4e80, #11244d); /*(濃い色(上)、薄い色(下))*/
+	border-left: 1px solid #3c6690;
+	border-top: 1px solid #3c6690;
+	border-bottom: 1px solid #3c6690;
+	box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3) inset;
+	width: 0%;
+	padding: 10px 0;
+	font-size:15px;
+}
+
+table td {
+	border-left: 1px solid #a8b7c5;
+	border-bottom: 1px solid #a8b7c5;
+	border-top: none;
+	box-shadow: 0px -3px 5px 1px #b5d1e2 inset;
+	width: 0%;
+	padding: 4px 15px 4px 15px;/*セルの上右下左の余白*/
+}
+
+table td:last-child {
+	border-right: 1px solid #a8b7c5;
+}
+
+table tr:last-child td:first-child {
+	border-radius: 0 0 0 5px;
+}
+
+table tr:last-child td:last-child {
+	border-radius: 0 0 5px 0;
+}
+
+
+img.logo {
+width: 300px;
+height: 50px;
+position: fixed;
+left:0px;
+top:0px;
+}
+
+.TextBoxHover:hover {
+  border: 1px solid #0094ff;
+  background-color:#cbe9ff;
+}
+
+p.login{
+	color:red;
+	font-size:70%;
+	}
+p.riku{
+	color:brown;
+}
+img.logi {
+width: 900px;
+/* height: 500px; */
+/* position: fixed; */
+/* left: 100px; */
+/* top:90px; */
+/* margin-left : auto; */
+/* margin-right : auto; */
+text-align : center
+}
+
+#iframe{
+	width:90%;
+	min-width:90%;
+}
+
+hr {
+  width:50%;
+  height: 1px;
+  background-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#ccc), to(transparent));
+  background-image: linear-gradient(to right, transparent, #ccc, transparent);
+}
